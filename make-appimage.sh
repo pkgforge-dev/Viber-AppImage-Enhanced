@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q viber | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q viber | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook:fix-namespaces.hook"
@@ -17,6 +17,8 @@ export DEPLOY_VULKAN=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
+
+sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
