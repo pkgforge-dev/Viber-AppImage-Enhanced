@@ -7,7 +7,6 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 make-aur-package viber
-pacman -Syu --noconfirm qt6-base qt6-charts
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
