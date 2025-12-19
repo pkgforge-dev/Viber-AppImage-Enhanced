@@ -15,7 +15,7 @@ export DEPLOY_PIPEWIRE=1
 export DEPLOY_GSTREAMER=1
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
-# Viber already bundles those libs already
+# Viber bundles those libs already
 export DEPLOY_QT=0
 export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
