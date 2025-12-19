@@ -14,6 +14,7 @@ export DEPLOY_PIPEWIRE=1
 export DEPLOY_GSTREAMER=1
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
+export DEPLOY_QT=0 # Viber already bundles qt and qml
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
