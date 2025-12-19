@@ -18,7 +18,7 @@ export DEPLOY_VULKAN=1
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
 
-sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
+sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/viber.desktop
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
