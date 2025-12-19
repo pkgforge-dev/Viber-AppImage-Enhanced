@@ -21,7 +21,8 @@ export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/*
+quick-sharun ./AppDir/bin/* \
+             ./AppDir/bin/libexec/QtWeb*
 
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
 
