@@ -15,6 +15,11 @@ export DEPLOY_PIPEWIRE=1
 export DEPLOY_GSTREAMER=1
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
+# We default to Wayland's StartupWMClass here, as it's the most used on the Linux desktop.
+# X11's StartupWMClass is ViberPC, so that needs to be manually changed for X11 users,
+# or some automatic solution needs to be implemented for Qt apps, like it is implemented for Gtk apps here
+# https://github.com/pkgforge-dev/Anylinux-AppImages/blob/7765034a995ecd46e876d2d6360d8f411fa737ab/useful-tools/lib/gtk-class-fix.c
+export STARTUPWMCLASS=com.viber.Viber
 # Viber bundles those libs already
 export DEPLOY_QT=0
 export DEPLOY_QML=0
