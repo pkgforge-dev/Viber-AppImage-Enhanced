@@ -27,7 +27,8 @@ export DEPLOY_QT_WEB_ENGINE=0
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* \
-             ./AppDir/bin/libexec/*
+             ./AppDir/bin/libexec/* \
+             /usr/lib/libmng*             
 
 ## Hardlink QtWebEngineProcess to sharun manually, as it's in a non-standard libexec directory
 rm -f                 ./AppDir/bin/libexec/QtWebEngineProcess
