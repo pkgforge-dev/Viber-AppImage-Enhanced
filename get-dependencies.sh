@@ -6,8 +6,9 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
+make-aur-package libtiff5
+pacman -Syu --noconfirm libtheora
 make-aur-package viber
-pacman -Syu --noconfirm libtiff5 libtheora
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
