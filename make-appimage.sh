@@ -33,6 +33,9 @@ quick-sharun ./AppDir/bin/* \
 rm -f                 ./AppDir/bin/libexec/QtWebEngineProcess
 ln -f ./AppDir/sharun ./AppDir/bin/libexec/QtWebEngineProcess
 
+## Remove libgstreamermediaplugin.so, as libffmpegmediaplugin.so already exists
+rm -v ./AppDir/bin/plugins/multimedia/libgstreamermediaplugin.so
+
 ## Fix desktop file exec to be for the real executable
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
 
