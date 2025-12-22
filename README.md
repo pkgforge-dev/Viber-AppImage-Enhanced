@@ -35,7 +35,7 @@ They are very minimal, but they are just listed here for transparency.
 
 **Viber's side:**  
 - Linux 3.8+ kernel
-  - application uses QtWebEngine, which depends on unprivileged user namespaces, which were introduced in Linux 3.8 kernel
+  - application uses QtWebEngine, which depends on unprivileged user namespaces, which were introduced in Linux 3.8 kernel (released in 2013)
 - display server being active (X11 or Wayland)
 
 Not mandatory, but recommended:
