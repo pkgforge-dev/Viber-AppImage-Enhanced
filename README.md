@@ -42,9 +42,16 @@ Not mandatory, but recommended:
 - `xdg-open` (part of `xdg-utils`)
   - So opening URLs or files redirects to the default system applications (clicking on URL opens the web browser, clicking on file opens the file manager etc.)
 
+## Screenshot of Viber-AppImage-Enhanced working on Ubuntu 14.04 LTS VM
+<details>
+  <summary><b><i>Click to preview</i></b></summary>
+    <img src="https://github.com/user-attachments/assets/36c85e64-8c1e-4e16-a273-40cb7623f5ea" alt="Inspiration Image">
+  </a>
+</details>
+
 ## Screenshot on why AppImage is preferred for low-storage devices
 <details>
-  <summary><b><i>raison d'être</i></b></summary>
+  <summary><b><i>Click to preview</i></b></summary>
     <img src="https://github.com/user-attachments/assets/29576c50-b39c-46c3-8c16-a54999438646" alt="Inspiration Image">
   </a>
 </details>
