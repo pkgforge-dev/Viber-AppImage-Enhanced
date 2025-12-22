@@ -25,7 +25,7 @@ export DEPLOY_QT=0
 export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
 
-# Viber's ffmpeg 4.4 is incomplete and broken, it links to older libtheora.so.1 version,
+# Viber's ffmpeg 4.4 is incomplete and broken, it links to older libtheoradec.so.1 and libtheoraenc.so.1 version,
 # which it doesn't bundle at all, which is crucial for video camera working
 # To fix this issue, we we will remove Viber's ffmpeg 4.4 and use Arch's ffmpeg 4.4 instead, which links to latest libtheora
 rm -fv ./AppDir/bin/lib/libavcodec* 
