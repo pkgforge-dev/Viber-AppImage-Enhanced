@@ -11,20 +11,38 @@
 
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun), which makes it extremely easy to turn any binary into a portable package without using containers or similar tricks. 
+Unofficial AppImage of Viber, which works on any Linux distribution and is more reliable than the official Viber AppImage, hence the `-Enhanced` suffix.  
 
-**This AppImage bundles everything and should work on any linux distro, even on musl based ones.**
+## Official Viber AppImage issues
+- It depends on the EOL `libfuse2` library, which had the last release in 2019.
+  - Linux distributions like Ubuntu and others don't ship `libfuse2`, so Viber AppImage doesn't work by default
+- It doesn't bundle every library that is necessary for the app function
+- Due to the above, video camera function is inconsistent, requiring older `libtheora` v1.x to be installed on the host, which some distros don't have
 
-It is possible that this appimage may fail to work with appimagelauncher, I recommend these alternatives instead: 
+## How this AppImage solves the above issues
+- It doesn't depend on `libfuse` at all, as it can utilize kernel's unprivileged user namespaces function or as a fallback simply extract directory to `/tmp/` and run
+  - Thanks to the [`uruntime`](https://github.com/VHSgunzo/uruntime)
+- It ships all the needed libs, binaries and directories reliably and relatively easy, thanks to the robust stracing system called [`sharun`](https://github.com/VHSgunzo/sharun) and it's wrapper [`quick-sharun`](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh)
+  - If it ever happens that some dependencies are missing, it's clear to troubleshoot with `APPIMAGE_DEBUG=1` variable
+- GPU acceleration, video camera function, calls, notifications, everything is tested to work accordingly compared to the upstream app capabilities
 
-* [AM](https://github.com/ivan-hc/AM) `am -i viber-enhanced` or `appman -i viber-enhanced`
+## Requirements
+They are very minimal, but they are just listed here for transparency.
 
-* [dbin](https://github.com/xplshn/dbin) `dbin install viber-enhanced.appimage`
+**AppImage's side:**  
+- POSIX `/bin/sh` shell
+- writable `/tmp/` directory
 
-* [soar](https://github.com/pkgforge/soar) `soar install viber-enhanced`
+**Viber's side:**  
+- Linux 3.8+ kernel
+  - application uses QtWebEngine, which depends on unprivileged user namespaces, which were introduced in Linux 3.8 kernel
+- display server being active (X11 or Wayland)
 
-This appimage works without fuse2 as it can use fuse3 instead, it can also work without fuse at all thanks to the [uruntime](https://github.com/VHSgunzo/uruntime)
+Not mandatory, but recommended:
+- `xdg-open` (part of `xdg-utils`)
+  - So opening URLs or files redirects to the default system applications (clicking on URL opens the web browser, clicking on file opens the file manager etc.)
 
+## Screenshot on why AppImage is preferred for low-storage devices
 <details>
   <summary><b><i>raison d'être</i></b></summary>
     <img src="https://github.com/user-attachments/assets/29576c50-b39c-46c3-8c16-a54999438646" alt="Inspiration Image">
