@@ -26,14 +26,14 @@ export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
 
 # Remove Viber's ffmpeg, as it's broken, video camera doesn't work, we will use our ffmpeg 4.4 instead
-rm ./AppDir/bin/lib/libavcodec* 
-rm ./AppDir/bin/lib/libavdevice*
-rm ./AppDir/bin/lib/libavfilter*
-rm ./AppDir/bin/lib/libavformat*
-rm ./AppDir/bin/lib/libavutil*
-rm ./AppDir/bin/lib/libpostproc*
-rm ./AppDir/bin/lib/libswresample*
-rm ./AppDir/bin/lib/libswscale*
+rm -f ./AppDir/bin/lib/libavcodec* 
+rm -f ./AppDir/bin/lib/libavdevice*
+rm -f ./AppDir/bin/lib/libavfilter*
+rm -f ./AppDir/bin/lib/libavformat*
+rm -f ./AppDir/bin/lib/libavutil*
+rm -f ./AppDir/bin/lib/libpostproc*
+rm -f ./AppDir/bin/lib/libswresample*
+rm -f ./AppDir/bin/lib/libswscale*
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* \
