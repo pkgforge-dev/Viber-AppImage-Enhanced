@@ -48,6 +48,7 @@ ln -f ./AppDir/sharun ./AppDir/bin/libexec/QtWebEngineProcess
 
 ## Fix desktop file exec to be for the real executable
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
+sed -i '/Path=/d' ./AppDir/com.viber.Viber.desktop
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
