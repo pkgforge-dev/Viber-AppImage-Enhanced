@@ -30,8 +30,8 @@ Unofficial AppImage of Viber, which works on any Linux distribution and is more 
 They are very minimal, but they are just listed here for transparency.
 
 **AppImage's side:**  
-- POSIX `/bin/sh` shell
-- writable `/tmp/` directory
+- `/bin/sh` POSIX shell
+- `/tmp/` directory that is writable
 
 **Viber's side:**  
 - Linux 3.8+ kernel
