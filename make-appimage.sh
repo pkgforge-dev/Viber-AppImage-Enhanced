@@ -40,11 +40,7 @@ rm -fv ./AppDir/bin/lib/libswscale*
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* \
              ./AppDir/bin/libexec/* \
-             /usr/lib/libmng*             
-
-## Hardlink QtWebEngineProcess to sharun manually, as it's in a non-standard libexec directory
-rm -f                 ./AppDir/bin/libexec/QtWebEngineProcess
-ln -f ./AppDir/sharun ./AppDir/bin/libexec/QtWebEngineProcess
+             /usr/lib/libmng*
 
 ## Fix desktop file exec to be for the real executable
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
