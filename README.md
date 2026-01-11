@@ -59,7 +59,7 @@ Not mandatory, but recommended:
 ## Known quirk
 - "Launch Viber in the background" option is grayed-out in settings
   - This is a known upstream issue and I'm not sure why they disabled it when that function is available.  
-    To enable it, you can pass the `--auto-start` argument to the AppImage, which will create the silent autostart entry.
+    To enable it, you can pass the `--auto-start` argument to the AppImage, which will create the silent autostart entry on app start.
 
 ---
 
