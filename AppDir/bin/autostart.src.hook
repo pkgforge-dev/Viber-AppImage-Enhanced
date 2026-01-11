@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$1" = '--auto-start' ]; then
+	shift
+	dst_dir=${XDG_DATA_HOME:-$HOME/.local/share}/autostart
+	mkdir -p "$dst_dir"
+	cp -v "$APPDIR"/com.viber.Viber.desktop "$dst_dir"
+	sed -i -e "s|^Exec=.*|Exec=$APPIMAGE StartInBackground|g" "$dst_dir"/com.viber.Viber.desktop
+fi
