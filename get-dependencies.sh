@@ -7,7 +7,9 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 make-aur-package libtiff5
-pacman -Syu --noconfirm libtheora libbluray ffmpeg4.4 libmng
+make-aur-package libjpeg6-turbo
+make-aur-package ffmpeg7.1
+pacman -Syu --noconfirm libbluray libmng
 make-aur-package viber
 
 if [ "$ARCH" = 'x86_64' ]; then
