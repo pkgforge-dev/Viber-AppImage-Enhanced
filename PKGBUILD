@@ -23,6 +23,8 @@ prepare() {
 
   tar -xf control.tar.xz
 
+  tar -Jxf data.tar.xz
+
   sed -e 's|Exec=/opt/viber/Viber|Exec=viber|g' \
       -e 's|/usr/share/pixmaps/viber.png|viber.png|g' \
       -i usr/share/applications/viber.desktop
