@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$1" = '--auto-start' ] || [ "${APPIMAGE_VIBER_AUTOSTART:-false}" = true ]; then
+if [ "$1" = '--auto-start' ] || [ "${APPIMAGE_VIBER_AUTOSTART:-0}" = 1 ]; then
 	shift
 	dst_dir=${REAL_XDG_CONFIG_HOME:-${XDG_CONFIG_HOME:-$HOME/.config}}/autostart
 	mkdir -p "$dst_dir"
