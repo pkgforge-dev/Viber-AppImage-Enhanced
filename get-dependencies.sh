@@ -14,6 +14,7 @@ PRE_BUILD_CMDS="
 sed -i 's/^pkgver=.*/pkgver=27.0.0.1/' ./PKGBUILD
 sed -i 's/sha256sums=('8bb7c6f12765fefe500324ec0a1e8e29ee010d89d0d2304981276a30eae42cda')/sha256sums=('15dcf07959270999a8015c4ffdb933f4a7f095fbccf23880a86a3ce7dc622390')/ ./PKGBUILD
 "
+export PRE_BUILD_CMDS
 make-aur-package viber
 
 if [ "$ARCH" = 'x86_64' ]; then
