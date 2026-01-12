@@ -9,6 +9,7 @@ echo "---------------------------------------------------------------"
 make-aur-package libtiff5
 make-aur-package libjpeg6-turbo
 make-aur-package ffmpeg7.1
+make-aur-package
 
 if [ "$ARCH" = 'x86_64' ]; then
 	pacman -Syu --noconfirm libva-intel-driver
