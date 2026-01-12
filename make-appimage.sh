@@ -12,7 +12,6 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/viber.svg
 export DESKTOP=/usr/share/applications/com.viber.Viber.desktop
 export MAIN_BIN=Viber
 export DEPLOY_PIPEWIRE=1
-export DEPLOY_GSTREAMER=1
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 # We default to Wayland's StartupWMClass here, as it's the most used on the Linux desktop.
@@ -25,9 +24,8 @@ export DEPLOY_QT=0
 export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
 
-# Viber's ffmpeg 4.4 is incomplete and broken, it links to older libtheoradec.so.1 and libtheoraenc.so.1 version,
-# which it doesn't bundle at all, which is crucial for video camera working
-# To fix this issue, we we will remove Viber's ffmpeg 4.4 and use Arch's ffmpeg 4.4 instead, which links to latest libtheora
+# We used this when Viber linked to the older version of 'libtheora', which is not required anymore
+# However, we will still remove those ffmpeg libs and use the ones provided by Arch Linux
 rm -fv ./AppDir/bin/lib/libavcodec* 
 rm -fv ./AppDir/bin/lib/libavdevice*
 rm -fv ./AppDir/bin/lib/libavfilter*
@@ -40,7 +38,6 @@ rm -fv ./AppDir/bin/lib/libswscale*
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* \
              ./AppDir/bin/libexec/* \
-             /usr/lib/libmng*
 
 ## Fix desktop file exec to be for the real executable
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
