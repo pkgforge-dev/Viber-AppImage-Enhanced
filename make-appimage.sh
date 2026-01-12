@@ -39,7 +39,7 @@ rm -fv ./AppDir/bin/lib/libswscale*
 quick-sharun ./AppDir/bin/* \
              ./AppDir/bin/libexec/* \
              /usr/lib/libmng* \
-             /usr/lib/pipewire*
+             /usr/lib/libpipewire*
 
 ## Fix desktop file exec to be for the real executable
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
