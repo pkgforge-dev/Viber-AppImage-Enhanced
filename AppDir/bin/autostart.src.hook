@@ -4,7 +4,7 @@ if [ "$1" = '--auto-start' ] || [ "${APPIMAGE_VIBER_AUTOSTART:-0}" = 1 ]; then
 	if [ "$1" = '--auto-start' ]; then
     	shift
     fi
-	dst_dir=${REAL_XDG_CONFIG_HOME:-${XDG_CONFIG_HOME:-$HOME/.config}}/autostart
+	dst_dir="${HOST_XDG_CONFIG_HOME}/autostart"
 	mkdir -p "$dst_dir"
 	echo "[Desktop Entry]
 Type=Application
