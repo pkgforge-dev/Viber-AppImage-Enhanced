@@ -4,6 +4,9 @@ if [ "$1" = '--auto-start' ] || [ "${APPIMAGE_VIBER_AUTOSTART:-0}" = 1 ]; then
 	shift
 	dst_dir=${REAL_XDG_CONFIG_HOME:-${XDG_CONFIG_HOME:-$HOME/.config}}/autostart
 	mkdir -p "$dst_dir"
-	__tmp_sed=$(sed "s|^Exec=.*|Exec=$APPIMAGE StartInBackground|g" "$APPDIR"/com.viber.Viber.desktop)
-	echo "$__tmp_sed" > "$dst_dir"/com.viber.Viber.desktop
+	echo "[Desktop Entry]
+Type=Application
+Name=Viber
+Exec=$APPIMAGE StartInBackground
+X-GNOME-Autostart-enabled=true" > "$dst_dir"/com.viber.Viber.desktop
 fi
