@@ -13,7 +13,7 @@ url='https://www.viber.com'
 license=('custom')
 depends=('libxss' 'xcb-util-cursor' 'xcb-util-image' 'xcb-util-keysyms' 'xcb-util-renderutil' 'xcb-util-wm' 'libxss'
 	'openssl' 'libpulse' 'alsa-lib' 'nss' 'libxcomposite' 'libxcursor' 'libxdamage' 'libxslt' 'openssl-1.1'
-	'snappy' 'numactl' 'libxml2-legacy' 'libjpeg6-turbo' 'libtiff5' 'ffmpeg7.1' 'libbluray' 'libmng')
+	'snappy' 'numactl' 'libxml2-legacy' 'libjpeg6-turbo' 'libtiff5' 'ffmpeg7.1' 'libbluray' 'libmng' 'libharfbuzz')
 options=('!strip')
 source=("$pkgname-$pkgver.deb::https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb")
 sha256sums=('15dcf07959270999a8015c4ffdb933f4a7f095fbccf23880a86a3ce7dc622390')
