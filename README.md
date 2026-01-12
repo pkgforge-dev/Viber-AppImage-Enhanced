@@ -60,7 +60,7 @@ Not mandatory, but recommended:
   - This is a known upstream issue and I'm not sure why they disabled it when that function is available.  
     To enable this, which will create the silent autostart entry on app start, you can either do these things:
     - enter this command in terminal once:  
-      `echo 'APPIMAGE_VIBER_AUTOSTART=1' >> /path/to/viber-appimage.env`  
+      `/path/to/viber-appimage --appimage-add-env APPIMAGE_VIBER_AUTOSTART=1`  
       which will add the persisting `APPIMAGE_VIBER_AUTOSTART=1` variable to the AppImage env file
     - pass the `--auto-start` as the 1st argument to the AppImage:  
       `/path/to/viber-appimage --auto-start`
