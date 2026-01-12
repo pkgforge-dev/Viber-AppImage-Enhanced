@@ -17,7 +17,6 @@ Unofficial AppImage of Viber, which works on any Linux distribution and is more 
 - It depends on the EOL `libfuse2` library, which had the last release in 2019.
   - Linux distributions like Ubuntu and others don't ship `libfuse2`, so Viber AppImage doesn't work by default
 - It doesn't bundle every library that is necessary for the app function
-- Due to the above, video camera function is inconsistent, requiring older `libtheora` v1.x to be installed on the host, which some distros don't have
 
 ## How this AppImage solves the above issues
 - It doesn't depend on `libfuse` at all, as it can utilize kernel's unprivileged user namespaces function or as a fallback simply extract directory to `/tmp/` and run
