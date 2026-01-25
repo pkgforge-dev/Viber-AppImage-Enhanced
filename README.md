@@ -2,12 +2,13 @@
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Viber-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
 [![CI Build Status](https://github.com//pkgforge-dev/Viber-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Viber-AppImage-Enhanced)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/29a55811-3898-4818-aaef-96d12cb35e46" width="128" />
 </p>
 
-* [Latest Stable Release](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
+* [Upstream URL](https://www.viber.com/)
 
 ---
 
