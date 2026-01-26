@@ -32,7 +32,7 @@ Unofficial AppImage of Viber, which works on any Linux distribution and is more 
 - It ships all the needed libs, binaries and directories reliably and relatively easy, thanks to the robust stracing system called [`sharun`](https://github.com/VHSgunzo/sharun) and it's wrapper [`quick-sharun`](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh)
   - If it ever happens that some dependencies are missing, it's clear to troubleshoot with `APPIMAGE_DEBUG=1` variable
 - GPU acceleration, video camera function, calls, notifications, everything is tested to work accordingly compared to the upstream app capabilities
-- It ships its own hook for seamless self-updater using appimageupdatetool and prompting the user if they want to opt-in or out
+- It ships its own hook for seamless self-updater using `appimageupdatetool` and prompting the user if they want to opt-in or out
 
 ## Requirements
 They are very minimal, but they are just listed here for transparency.
