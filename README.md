@@ -1,3 +1,5 @@
+<div align="center">
+
 # Viber-AppImage-Enhanced 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Viber-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://github.com/user-attachments/assets/29a55811-3898-4818-aaef-96d12cb35e46" width="128" />
 </p>
 
-* [Upstream URL](https://www.viber.com/)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest) | [Click here](https://www.viber.com/) |
+
+</div>
 
 ---
 
