@@ -1,6 +1,6 @@
 <div align="center">
 
-# Viber-AppImage-Enhanced 🐧
+# Viber AppImage-Enhanced 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Viber-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
 [![CI Build Status](https://github.com//pkgforge-dev/Viber-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Viber-AppImage-Enhanced/releases/latest)
