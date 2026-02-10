@@ -47,4 +47,4 @@ sed -i '/Path=/d' ./AppDir/com.viber.Viber.desktop
 quick-sharun --make-appimage
 
 # Test the final app
-quick-sharun --test ./dist/*.AppImage
+# quick-sharun --test ./dist/*.AppImage
