@@ -42,9 +42,8 @@ package() {
   ln -s /opt/viber/Viber "$pkgdir/usr/bin/viber"
 
   # install icons
-  cd "$srcdir/usr/share/viber"
   for iconsize in 16x16 24x24 32x32 48x48 64x64 96x96 128x128 256x256; do
-    install -Dm644 icons/$iconsize.png "$pkgdir/usr/share/icons/hicolor/$iconsize/apps/viber.png"
+    install -Dm644 $srcdir/usr/share/viber/$iconsize.png "$pkgdir/usr/share/icons/hicolor/$iconsize/apps/viber.png"
   done
-  install -Dm644 usr/share/icons/hicolor/scalable/apps/Viber.svg "$pkgdir/usr/share/icons/hicolor/scalable/apps/viber.svg"
+  install -Dm644 $srcdir/usr/share/icons/hicolor/scalable/apps/Viber.svg "$pkgdir/usr/share/icons/hicolor/scalable/apps/viber.svg"
 }
