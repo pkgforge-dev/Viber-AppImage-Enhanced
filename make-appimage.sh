@@ -46,5 +46,8 @@ sed -i '/Path=/d' ./AppDir/com.viber.Viber.desktop
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
+# Also make an aarch64 AppImage that uses FEX
+quick-sharun --make-aarch64-appimage
+
 # Test the final app
-quick-sharun --test ./dist/*.AppImage
+quick-sharun --test ./dist/*x86_64.AppImage
