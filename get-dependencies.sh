@@ -20,8 +20,12 @@ make-aur-package libjpeg6-turbo
 make-aur-package ffmpeg7.1
 make-aur-package
 
+set -x
+
 mkdir -p ./AppDir/bin ./AppDir/shared/lib
 cp -rv /opt/viber/* ./AppDir/bin
 mv -v ./AppDir/lib/* ./AppDir/shared/lib
 rm -rf ./AppDir/bin/lib
 ln -s ../shared/lib ./AppDir/bin/lib
+
+set +x
