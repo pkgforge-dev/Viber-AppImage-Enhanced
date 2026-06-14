@@ -43,6 +43,10 @@ quick-sharun ./AppDir/bin/* \
 sed -e 's|Exec=viber|Exec=Viber|g' -i ./AppDir/com.viber.Viber.desktop
 sed -i '/Path=/d' ./AppDir/com.viber.Viber.desktop
 
+# Reject COLRv1 fonts, as Viber's Qt cannot render some emojis if those fonts are used
+# Ported from flatpak's manifest: https://github.com/flathub/com.viber.Viber/commit/2ef8aea7a68e94792bf7de7776f4dcb51262ff0f
+echo 'FONTCONFIG_FILE=${SHARUN_DIR}/etc/fonts.conf' >> ./AppDir/.env
+
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
