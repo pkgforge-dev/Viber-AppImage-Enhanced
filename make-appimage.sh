@@ -51,4 +51,4 @@ echo 'FONTCONFIG_FILE=${SHARUN_DIR}/etc/fonts.conf' >> ./AppDir/.env
 quick-sharun --make-appimage
 
 # Test the final app
-quick-sharun --test ./dist/*.AppImage --no-sandbox
+quick-sharun --test ./dist/*.AppImage
