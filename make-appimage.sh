@@ -24,17 +24,6 @@ export DEPLOY_QT=0
 export DEPLOY_QML=0
 export DEPLOY_QT_WEB_ENGINE=0
 
-# We used this when Viber linked to the older version of 'libtheora', which is not required anymore
-# However, we will still remove those ffmpeg libs and use the ones provided by Arch Linux
-rm -fv ./AppDir/bin/lib/libavcodec* 
-rm -fv ./AppDir/bin/lib/libavdevice*
-rm -fv ./AppDir/bin/lib/libavfilter*
-rm -fv ./AppDir/bin/lib/libavformat*
-rm -fv ./AppDir/bin/lib/libavutil*
-rm -fv ./AppDir/bin/lib/libpostproc*
-rm -fv ./AppDir/bin/lib/libswresample*
-rm -fv ./AppDir/bin/lib/libswscale*
-
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* \
              ./AppDir/bin/libexec/*

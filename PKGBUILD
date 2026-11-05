@@ -5,18 +5,18 @@
 # Contributor: Özgür Sarıer <ozgursarier1011601115[at]gmail[dot]com>
 
 pkgname=viber
-pkgver=27.3.0.2
+pkgver=29.4.0.7
 pkgrel=1
 pkgdesc="Proprietary cross-platform IM and VoIP software"
 arch=('x86_64')
 url='https://www.viber.com'
 license=('custom')
 depends=('xcb-util-cursor' 'xcb-util-image' 'xcb-util-keysyms' 'xcb-util-renderutil' 'xcb-util-wm' 'libxss'
-	'openssl' 'libpulse' 'alsa-lib' 'nss' 'libxcomposite' 'libxcursor' 'libxdamage' 'libxslt'
-	'snappy' 'numactl' 'libxml2-legacy' 'libjpeg6-turbo' 'libtiff5' 'ffmpeg7.1' 'libbluray' 'libmng' 'harfbuzz' 'pipewire-audio')
+	'openssl' 'libpulse' 'alsa-lib' 'nss' 'libxcomposite' 'libxcursor' 'libxdamage'
+	'libva' 'libdrm' 'harfbuzz' 'pipewire-audio')
 options=('!strip')
 source=("$pkgname-$pkgver.deb::https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb")
-sha256sums=('961534dc0cb920006ec7ae8108b0e1ba09a476eef1e13b4b370a79cd52dd20f3')
+sha256sums=('34b3c18f5d441a9813066811d037e971e1207d439c246766abd28e185a7ecd37')
 
 prepare() {
   cd "$srcdir"
