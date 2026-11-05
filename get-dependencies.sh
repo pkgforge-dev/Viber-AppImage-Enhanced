@@ -15,9 +15,6 @@ get-debloated-pkgs --add-common --prefer-nano intel-media-driver-mini ! qt6-base
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-make-aur-package libtiff5
-make-aur-package libjpeg6-turbo
-make-aur-package ffmpeg7.1
 make-aur-package
 
 mkdir -p ./AppDir/bin ./AppDir/lib
